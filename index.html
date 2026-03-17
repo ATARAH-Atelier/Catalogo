@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atarah Atelier | Catálogo</title>
+  <meta name="description" content="Atarah Atelier es una marca de ropa y accesorios especiales con una propuesta elegante, femenina y tradicional. Descubre piezas para primera comunión, línea médica, confort, accesorios y moda con identidad propia." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marfil: '#F8F3EC',
+            arena: '#EADFCC',
+            vino: '#7A2E3A',
+            vinoOscuro: '#5B1F2A',
+            oro: '#C5A46D',
+            rosa: '#D8B2B7',
+            cacao: '#4A342E'
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'serif'],
+            body: ['Manrope', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 20px 50px rgba(91,31,42,0.10)',
+            card: '0 12px 35px rgba(74,52,46,0.08)'
+          },
+          backgroundImage: {
+            hero: 'radial-gradient(circle at top right, rgba(197,164,109,0.22), transparent 35%), radial-gradient(circle at left center, rgba(122,46,58,0.10), transparent 30%)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-marfil text-cacao font-body antialiased">
+  <div class="min-h-screen bg-hero">
+    <header class="sticky top-0 z-50 backdrop-blur bg-marfil/85 border-b border-oro/15">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center justify-between py-4">
+            <a href="#inicio" class="flex items-center gap-3">
+            <img 
+                src="ATARAH_logo.png" 
+                alt="Atarah Atelier"
+                class="h-12 w-auto object-contain"
+            />
+            <div>
+                <p class="font-display text-2xl leading-none text-vino">Atarah</p>
+                <p class="text-[11px] uppercase tracking-[0.35em] text-oro font-semibold">Atelier</p>
+            </div>
+            </a>
+
+          <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-cacao/80">
+            <a href="#colecciones" class="hover:text-vino transition">Colecciones</a>
+            <a href="#destacados" class="hover:text-vino transition">Destacados</a>
+            <a href="#categorias" class="hover:text-vino transition">Categorías</a>
+            <a href="#contacto" class="hover:text-vino transition">Contacto</a>
+          </nav>
+
+          <a href="#destacados" class="inline-flex items-center gap-2 rounded-full bg-vino px-5 py-3 text-white text-sm font-bold shadow-soft hover:bg-vinoOscuro transition">
+            <span class="material-symbols-outlined text-[20px]">diamond</span>
+            Ver catálogo
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-20 lg:pt-24 lg:pb-28">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 rounded-full border border-oro/30 bg-white/80 px-4 py-2 text-sm text-vino font-semibold mb-6">
+                <span class="material-symbols-outlined text-[18px] text-oro">auto_awesome</span>
+                Elegancia, tradición y delicadeza
+              </div>
+              <h1 class="font-display text-5xl md:text-6xl lg:text-7xl leading-[0.95] text-vino mb-6">
+                Catálogo exclusivo para piezas que dejan huella.
+              </h1>
+              <p class="text-lg md:text-xl text-cacao/75 max-w-xl leading-relaxed mb-8">
+                Atarah Atelier es una marca de ropa y accesorios especiales que une elegancia, tradición y delicadeza en cada pieza. Nuestra propuesta reúne prendas para primera comunión, línea médica, confort, accesorios y diseños con identidad, pensados para acompañar momentos importantes con estilo y distinción.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                <a href="#destacados" class="inline-flex items-center justify-center gap-2 rounded-full bg-vino px-6 py-4 text-white font-bold shadow-soft hover:bg-vinoOscuro transition">
+                  <span class="material-symbols-outlined">visibility</span>
+                  Explorar prendas
+                </a>
+                <a href="#categorias" class="inline-flex items-center justify-center gap-2 rounded-full border border-vino/20 bg-white px-6 py-4 text-vino font-bold hover:border-vino/40 transition">
+                  <span class="material-symbols-outlined">style</span>
+                  Ver categorías
+                </a>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 max-w-xl">
+                <div class="rounded-2xl bg-white/90 p-4 shadow-card border border-oro/10">
+                  <p class="text-2xl font-extrabold text-vino">11</p>
+                  <p class="text-sm text-cacao/70">Líneas de producto</p>
+                </div>
+                <div class="rounded-2xl bg-white/90 p-4 shadow-card border border-oro/10">
+                  <p class="text-2xl font-extrabold text-vino">100%</p>
+                  <p class="text-sm text-cacao/70">Catálogo visual</p>
+                </div>
+                <div class="rounded-2xl bg-white/90 p-4 shadow-card border border-oro/10">
+                  <p class="text-2xl font-extrabold text-vino">Atarah</p>
+                  <p class="text-sm text-cacao/70">Identidad premium</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -top-8 -right-8 h-44 w-44 bg-oro/20 rounded-full blur-3xl"></div>
+              <div class="absolute -bottom-10 left-0 h-48 w-48 bg-vino/10 rounded-full blur-3xl"></div>
+
+              <div class="relative rounded-[2rem] bg-white p-5 md:p-6 shadow-soft border border-oro/15">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="col-span-2 rounded-[1.5rem] bg-gradient-to-br from-vino via-vinoOscuro to-cacao p-8 text-white min-h-[250px] flex flex-col justify-end">
+                    <span class="text-sm uppercase tracking-[0.3em] text-oro/90 mb-3">Colección destacada</span>
+                    <h2 class="font-display text-4xl mb-3">Primera Comunión</h2>
+                    <p class="text-white/80 max-w-md">Piezas delicadas y elegantes para celebrar un momento inolvidable con pureza, belleza y distinción.</p>
+                  </div>
+                  <div class="rounded-[1.5rem] bg-arena/60 border border-oro/15 p-6 min-h-[190px] flex flex-col justify-between">
+                    <span class="material-symbols-outlined text-vino text-3xl">checkroom</span>
+                    <div>
+                      <h3 class="font-display text-3xl text-vino">Tradición</h3>
+                      <p class="text-sm text-cacao/70 mt-2">Trajes folclóricos y piezas con identidad visual fuerte.</p>
+                    </div>
+                  </div>
+                  <div class="rounded-[1.5rem] bg-rosa/35 border border-vino/10 p-6 min-h-[190px] flex flex-col justify-between">
+                    <span class="material-symbols-outlined text-vino text-3xl">night_shelter</span>
+                    <div>
+                      <h3 class="font-display text-3xl text-vino">Confort</h3>
+                      <p class="text-sm text-cacao/70 mt-2">Batas y pantuflas que elevan la sensación de cuidado.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="colecciones" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+            <div>
+              <p class="text-sm uppercase tracking-[0.35em] text-oro font-extrabold mb-3">Esencia Atarah</p>
+              <h2 class="font-display text-4xl md:text-5xl text-vino mb-3">Una marca pensada para enamorar a primera vista.</h2>
+              <p class="max-w-2xl text-cacao/70 text-lg">Atarah Atelier es una marca creada para vestir con elegancia momentos especiales y necesidades cotidianas, combinando lujo sutil, tradición, femineidad y una presentación cuidada que resalta el valor de cada prenda.</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <article class="rounded-[2rem] bg-white border border-oro/10 p-7 shadow-card">
+              <div class="w-14 h-14 rounded-2xl bg-vino/10 flex items-center justify-center mb-5">
+                <span class="material-symbols-outlined text-vino">workspace_premium</span>
+              </div>
+              <h3 class="font-display text-3xl text-vino mb-3">Presencia premium</h3>
+              <p class="text-cacao/70 leading-relaxed">Tipografía editorial, tonos vino y dorado suave, y una composición que transmite exclusividad sin recargar.</p>
+            </article>
+            <article class="rounded-[2rem] bg-white border border-oro/10 p-7 shadow-card">
+              <div class="w-14 h-14 rounded-2xl bg-vino/10 flex items-center justify-center mb-5">
+                <span class="material-symbols-outlined text-vino">favorite</span>
+              </div>
+              <h3 class="font-display text-3xl text-vino mb-3">Conexión emocional</h3>
+              <p class="text-cacao/70 leading-relaxed">La página se enfoca en sensaciones: delicadeza, tradición, orgullo y ese impulso visual que hace que alguien quiera preguntar por una pieza.</p>
+            </article>
+            <article class="rounded-[2rem] bg-white border border-oro/10 p-7 shadow-card">
+              <div class="w-14 h-14 rounded-2xl bg-vino/10 flex items-center justify-center mb-5">
+                <span class="material-symbols-outlined text-vino">spa</span>
+              </div>
+              <h3 class="font-display text-3xl text-vino mb-3">Belleza serena</h3>
+              <p class="text-cacao/70 leading-relaxed">Mucho aire, bloques suaves, tarjetas elegantes y llamadas visuales claras para que el catálogo respire lujo y orden.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="destacados" class="py-20 bg-white/70 border-y border-oro/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <p class="text-sm uppercase tracking-[0.35em] text-oro font-extrabold mb-3">Catálogo visual</p>
+            <h2 class="font-display text-4xl md:text-5xl text-vino mb-4">Todas las prendas y accesorios dentro de una sola página.</h2>
+            <p class="text-lg text-cacao/70">Explora una selección de prendas y accesorios de Atarah Atelier. Cada pieza puede abrirse en vista completa para apreciar mejor sus detalles, acabados y estilo.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Batas de Baño" data-gallery='["Batas_Baño.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Batas_Baño.jpeg" alt="Batas de Baño" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Batas de Baño</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Confort</span>
+                  <span class="material-symbols-outlined text-vino">self_care</span>
+                </div>
+                <p class="text-cacao/70">Piezas visualmente cálidas y acogedoras, ideales para transmitir suavidad, descanso y elegancia cotidiana.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Conjuntos Médicos para Niños" data-gallery='["Niños_Uniformes_Medicos.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Niños_Uniformes_Medicos.jpeg" alt="Conjuntos Médicos para Niños" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Conjuntos Médicos para Niños</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Infantil</span>
+                  <span class="material-symbols-outlined text-vino">pediatrics</span>
+                </div>
+                <p class="text-cacao/70">Conjuntos funcionales con una imagen limpia, tierna y profesional, pensados para resaltar orden y cuidado.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Batas Médicas Niños y Adultos" data-gallery='["Batas_Medicas.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Batas_Medicas.jpeg" alt="Batas Médicas Niños y Adultos" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Batas Médicas Niños y Adultos</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Profesional</span>
+                  <span class="material-symbols-outlined text-vino">medical_services</span>
+                </div>
+                <p class="text-cacao/70">Una categoría con presencia pulcra y confiable, ideal para mostrar variedad entre tallas infantiles y adultas.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Pantuflas" data-gallery='["Pantuflas_Blancas_Front.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Pantuflas_Blancas_Front.jpeg" alt="Pantuflas" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Pantuflas</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Suave</span>
+                  <span class="material-symbols-outlined text-vino">footprint</span>
+                </div>
+                <p class="text-cacao/70">Una línea visual cálida y agradable para piezas asociadas al hogar, cuidado y bienestar diario.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Corbatas Niños y Adultos" data-gallery='["Corbatas_Rojas.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Corbatas_Rojas.jpeg" alt="Corbatas Niños y Adultos" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Corbatas Niños y Adultos</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Clásico</span>
+                  <span class="material-symbols-outlined text-vino">style</span>
+                </div>
+                <p class="text-cacao/70">Accesorios con presencia formal y elegante, presentados para destacar textura, color y ocasión de uso.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Corbatines Niños y Adultos" data-gallery='["Corbatin_Azul.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Corbatin_Azul.jpeg" alt="Corbatines Niños y Adultos" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Corbatines Niños y Adultos</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Detalle</span>
+                  <span class="material-symbols-outlined text-vino">diamond</span>
+                </div>
+                <p class="text-cacao/70">Pequeños accesorios con mucho carácter, perfectos para una lectura visual refinada y atractiva.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Tirantes Niños y Adultos" data-gallery='["Tirantes_Negros.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Tirantes_Negros.jpeg" alt="Tirantes Niños y Adultos" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Tirantes Niños y Adultos</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Estilo</span>
+                  <span class="material-symbols-outlined text-vino">flare</span>
+                </div>
+                <p class="text-cacao/70">Una categoría ideal para mostrar personalidad, acabado y variedad en una presentación editorial.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Toreritas Niños y Adultos" data-gallery='["Toreritas_Doradas_Front.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Toreritas_Doradas_Front.jpeg" alt="Toreritas Niños y Adultos" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Toreritas Niños y Adultos</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Elegante</span>
+                  <span class="material-symbols-outlined text-vino">checkroom</span>
+                </div>
+                <p class="text-cacao/70">Prendas ligeras y decorativas que pueden lucir muy delicadas dentro de una narrativa visual femenina.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Trajes Folclóricos para Niños" data-gallery='["Traje_Folclorico.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Traje_Folclorico.jpeg" alt="Trajes Folclóricos para Niños" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Trajes Folclóricos para Niños</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Tradición</span>
+                  <span class="material-symbols-outlined text-vino">celebration</span>
+                </div>
+                <p class="text-cacao/70">Piezas con identidad venezolana, color y herencia cultural, presentadas con un aire festivo y elegante.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Levantadoras para Ancianas" data-gallery='["Levantadoras_Ancianas.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Levantadoras_Ancianas.jpeg" alt="Levantadoras para Ancianas" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Levantadoras para Ancianas</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Cuidado</span>
+                  <span class="material-symbols-outlined text-vino">chair</span>
+                </div>
+                <p class="text-cacao/70">Una categoría que debe sentirse práctica, respetuosa y cálida, sin perder la armonía visual del catálogo.</p>
+              </div>
+            </article>
+
+            <article class="product-card group rounded-[2rem] overflow-hidden bg-marfil border border-oro/10 shadow-card hover:-translate-y-1 transition duration-300" data-category="Guantes de Blonda o Tela" data-gallery='["Guantes_Blonda_Blancos.jpeg"]'>
+              <div class="relative h-72 overflow-hidden cursor-zoom-in">
+                <img src="Guantes_Blonda_Blancos.jpeg" alt="Guantes de Blonda o Tela" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-0 bg-gradient-to-t from-cacao/80 via-cacao/30 to-transparent pointer-events-none"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                  <div class="flex justify-end">
+                    <button type="button" class="open-gallery inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-vino shadow-soft hover:bg-white transition">
+                      <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+                      Ver más
+                    </button>
+                  </div>
+                  <span class="text-white/95 font-display text-4xl">Guantes de Blonda o Tela</span>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="text-xs uppercase tracking-[0.3em] text-oro font-extrabold">Delicado</span>
+                  <span class="material-symbols-outlined text-vino">gloves</span>
+                </div>
+                <p class="text-cacao/70">Modelos para niños y adultos presentados con una estética fina, ceremonial y visualmente muy cuidada.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="categorias" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+            <div>
+              <p class="text-sm uppercase tracking-[0.35em] text-oro font-extrabold mb-3">Categorías del catálogo</p>
+              <h2 class="font-display text-4xl md:text-5xl text-vino mb-5">Una colección completa presentada con elegancia para reflejar la esencia de la marca.</h2>
+              <p class="text-lg text-cacao/70 max-w-2xl mb-8">La marca reúne diferentes líneas de ropa y accesorios para niños y adultos, desde piezas ceremoniales hasta prendas funcionales y de confort, siempre con una presentación elegante, cálida y ordenada.</p>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div class="rounded-[1.75rem] bg-white p-6 border border-oro/10 shadow-card">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-vino">checkroom</span>
+                    <h3 class="font-display text-2xl text-vino">Confort & Hogar</h3>
+                  </div>
+                  <p class="text-cacao/70">Batas de baño, pantuflas y piezas pensadas para bienestar, comodidad y suavidad visual.</p>
+                </div>
+
+                <div class="rounded-[1.75rem] bg-white p-6 border border-oro/10 shadow-card">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-vino">medical_services</span>
+                    <h3 class="font-display text-2xl text-vino">Línea Médica</h3>
+                  </div>
+                  <p class="text-cacao/70">Conjuntos médicos infantiles y batas médicas para niños y adultos con una presentación limpia y profesional.</p>
+                </div>
+
+                <div class="rounded-[1.75rem] bg-white p-6 border border-oro/10 shadow-card">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-vino">styler</span>
+                    <h3 class="font-display text-2xl text-vino">Accesorios</h3>
+                  </div>
+                  <p class="text-cacao/70">Corbatas, corbatines, tirantes y guantes para niños y adultos con aire elegante y ceremonial.</p>
+                </div>
+
+                <div class="rounded-[1.75rem] bg-white p-6 border border-oro/10 shadow-card">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-vino">palette</span>
+                    <h3 class="font-display text-2xl text-vino">Tradición & Moda</h3>
+                  </div>
+                  <p class="text-cacao/70">Trajes folclóricos para niños, toreritas y otras prendas especiales con identidad y presencia visual.</p>
+                </div>
+              </div>
+            </div>
+
+            <aside class="rounded-[2rem] bg-gradient-to-b from-vino to-vinoOscuro text-white p-8 shadow-soft lg:sticky lg:top-28">
+              <p class="text-sm uppercase tracking-[0.35em] text-oro font-bold mb-3">Paleta Atarah</p>
+              <h3 class="font-display text-4xl mb-5">Colores que definen la marca</h3>
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-4">
+                  <span class="w-10 h-10 rounded-full bg-vino border border-white/20"></span>
+                  <div>
+                    <p class="font-bold">Vino</p>
+                    <p class="text-white/70 text-sm">Aporta elegancia, carácter y una presencia sofisticada.</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <span class="w-10 h-10 rounded-full bg-oro border border-white/20"></span>
+                  <div>
+                    <p class="font-bold">Dorado Suave</p>
+                    <p class="text-white/70 text-sm">Evoca delicadeza, brillo sutil y un acabado refinado.</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <span class="w-10 h-10 rounded-full bg-marfil border border-white/20"></span>
+                  <div>
+                    <p class="font-bold">Marfil</p>
+                    <p class="text-white/70 text-sm">Da luminosidad, suavidad y equilibrio visual a la marca.</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <span class="w-10 h-10 rounded-full bg-rosa border border-white/20"></span>
+                  <div>
+                    <p class="font-bold">Rosa Empolvado</p>
+                    <p class="text-white/70 text-sm">Añade calidez, feminidad y un aire delicado.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-[1.5rem] bg-white/10 border border-white/10 p-5">
+                <p class="font-semibold mb-2">Esencia visual:</p>
+                <p class="text-white/75 text-sm leading-relaxed">la combinación de estos tonos crea una identidad cálida, elegante y armoniosa, pensada para resaltar la belleza de cada prenda con una estética fina y memorable.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-white/70 border-y border-oro/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="rounded-[2.2rem] overflow-hidden bg-gradient-to-r from-vinoOscuro via-vino to-cacao p-10 lg:p-14 shadow-soft">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+              <div>
+                <p class="text-sm uppercase tracking-[0.35em] text-oro font-bold mb-3">Presentación de marca</p>
+                <h2 class="font-display text-4xl md:text-5xl text-white mb-5">Una marca pensada para vestir momentos especiales.</h2>
+                <p class="text-white/75 text-lg max-w-xl">Atarah Atelier refleja elegancia, delicadeza y tradición en cada una de sus piezas, cuidando cada detalle para que cada prenda transmita valor, estilo y distinción.</p>
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="rounded-[1.5rem] bg-white/10 border border-white/10 p-5 text-white">
+                  <span class="material-symbols-outlined text-oro mb-4">checkroom</span>
+                  <h3 class="font-bold text-lg mb-2">Prendas con intención</h3>
+                  <p class="text-white/70 text-sm">Cada diseño está pensado para resaltar belleza, elegancia y significado.</p>
+                </div>
+                <div class="rounded-[1.5rem] bg-white/10 border border-white/10 p-5 text-white">
+                  <span class="material-symbols-outlined text-oro mb-4">diamond</span>
+                  <h3 class="font-bold text-lg mb-2">Detalles que elevan</h3>
+                  <p class="text-white/70 text-sm">Texturas, acabados y combinaciones que aportan valor y distinción.</p>
+                </div>
+                <div class="rounded-[1.5rem] bg-white/10 border border-white/10 p-5 text-white">
+                  <span class="material-symbols-outlined text-oro mb-4">favorite</span>
+                  <h3 class="font-bold text-lg mb-2">Conexión emocional</h3>
+                  <p class="text-white/70 text-sm">Piezas creadas para acompañar momentos importantes y memorables.</p>
+                </div>
+                <div class="rounded-[1.5rem] bg-white/10 border border-white/10 p-5 text-white">
+                  <span class="material-symbols-outlined text-oro mb-4">auto_awesome</span>
+                  <h3 class="font-bold text-lg mb-2">Estilo Atarah</h3>
+                  <p class="text-white/70 text-sm">Una identidad unica, elegante y cálida que se reconoce al instante.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="py-20">
+        <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+          <p class="text-sm uppercase tracking-[0.35em] text-oro font-extrabold mb-3">Contacto</p>
+          <h2 class="font-display text-4xl md:text-5xl text-vino mb-5">¿Quieres conocer más sobre Atarah Atelier?</h2>
+          <p class="text-lg text-cacao/70 max-w-2xl mx-auto mb-8">Contáctanos para recibir más información sobre nuestras prendas, colecciones y disponibilidad.</p>
+
+          <div class="flex items-center justify-center">
+            <a href="https://wa.me/584140491999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-vino px-6 py-4 text-white font-bold shadow-soft hover:bg-vinoOscuro transition">
+              <span class="material-symbols-outlined">chat</span>
+              Más Información
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-oro/10 bg-white/70">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <p class="font-display text-2xl text-vino">Atarah Atelier</p>
+          <p class="text-sm text-cacao/60">Catálogo web con alma editorial, elegante y memorable.</p>
+        </div>
+        <div class="flex items-center gap-5 text-sm text-cacao/65">
+          <a href="#inicio" class="hover:text-vino transition">Inicio</a>
+          <a href="#destacados" class="hover:text-vino transition">Destacados</a>
+          <a href="#categorias" class="hover:text-vino transition">Categorías</a>
+          <a href="#contacto" class="hover:text-vino transition">Contacto</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-cacao/90 backdrop-blur-sm p-4">
+    <button id="lightboxClose" class="absolute top-4 right-4 md:top-6 md:right-6 w-11 h-11 rounded-full bg-white/90 text-vino flex items-center justify-center shadow-soft hover:bg-white transition" aria-label="Cerrar">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <button id="lightboxPrev" class="absolute left-3 md:left-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-vino flex items-center justify-center shadow-soft hover:bg-white transition" aria-label="Anterior">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
+
+    <div class="w-[92vw] h-[82vh] max-w-6xl flex flex-col items-center justify-center gap-4">
+      <div class="text-center text-white px-4">
+        <p id="lightboxCategory" class="font-display text-3xl md:text-4xl"></p>
+        <p id="lightboxCounter" class="text-sm uppercase tracking-[0.3em] text-oro mt-1"></p>
+      </div>
+
+      <div class="w-full h-full flex items-center justify-center overflow-hidden rounded-[2rem] bg-black/10 border border-white/10">
+        <img id="lightboxImage" src="" alt="" class="max-h-full max-w-full object-contain transition-transform duration-200 will-change-transform" />
+      </div>
+
+      <div id="lightboxThumbs" class="flex flex-wrap justify-center gap-3"></div>
+    </div>
+
+    <button id="lightboxNext" class="absolute right-3 md:right-8 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/90 text-vino flex items-center justify-center shadow-soft hover:bg-white transition" aria-label="Siguiente">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+
+    <div class="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 rounded-full bg-white/90 px-4 py-2 shadow-soft">
+      <button id="lightboxZoomOut" class="w-9 h-9 rounded-full bg-marfil text-vino flex items-center justify-center hover:bg-arena transition" aria-label="Alejar">
+        <span class="material-symbols-outlined">remove</span>
+      </button>
+      <button id="lightboxZoomReset" class="w-9 h-9 rounded-full bg-marfil text-vino flex items-center justify-center hover:bg-arena transition" aria-label="Reset">
+        <span class="material-symbols-outlined">restart_alt</span>
+      </button>
+      <button id="lightboxZoomIn" class="w-9 h-9 rounded-full bg-marfil text-vino flex items-center justify-center hover:bg-arena transition" aria-label="Acercar">
+        <span class="material-symbols-outlined">add</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const cards = Array.from(document.querySelectorAll('.product-card'));
+      if (!cards.length) return;
+
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCategory = document.getElementById('lightboxCategory');
+      const lightboxCounter = document.getElementById('lightboxCounter');
+      const lightboxThumbs = document.getElementById('lightboxThumbs');
+      const btnClose = document.getElementById('lightboxClose');
+      const btnPrev = document.getElementById('lightboxPrev');
+      const btnNext = document.getElementById('lightboxNext');
+      const btnZoomIn = document.getElementById('lightboxZoomIn');
+      const btnZoomOut = document.getElementById('lightboxZoomOut');
+      const btnZoomReset = document.getElementById('lightboxZoomReset');
+
+      let currentGallery = [];
+      let currentCategory = '';
+      let currentIndex = 0;
+      let scale = 1;
+      const minScale = 1;
+      const maxScale = 3;
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      function applyScale() {
+        lightboxImage.style.transform = `scale(${scale})`;
+      }
+
+      function renderThumbs() {
+        lightboxThumbs.innerHTML = '';
+        if (currentGallery.length <= 1) return;
+
+        currentGallery.forEach((src, index) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = `overflow-hidden rounded-2xl border transition ${index === currentIndex ? 'border-oro ring-2 ring-oro/40' : 'border-white/20 hover:border-white/50'}`;
+          button.innerHTML = `<img src="${src}" alt="Miniatura ${index + 1}" class="w-16 h-16 object-cover" />`;
+          button.addEventListener('click', () => showImage(index));
+          lightboxThumbs.appendChild(button);
+        });
+      }
+
+      function showImage(index) {
+        currentIndex = index;
+        lightboxImage.src = currentGallery[currentIndex];
+        lightboxImage.alt = `${currentCategory} ${currentIndex + 1}`;
+        lightboxCategory.textContent = currentCategory;
+        lightboxCounter.textContent = `${currentIndex + 1} / ${currentGallery.length}`;
+        scale = 1;
+        applyScale();
+        renderThumbs();
+      }
+
+      function openGallery(card) {
+        currentCategory = card.dataset.category || 'Producto';
+        try {
+          currentGallery = JSON.parse(card.dataset.gallery || '[]');
+        } catch (error) {
+          currentGallery = [];
+        }
+
+        if (!currentGallery.length) {
+          const fallbackImg = card.querySelector('img');
+          if (fallbackImg) currentGallery = [fallbackImg.src];
+        }
+
+        showImage(0);
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      function nextImage() {
+        if (!currentGallery.length) return;
+        showImage((currentIndex + 1) % currentGallery.length);
+      }
+
+      function prevImage() {
+        if (!currentGallery.length) return;
+        showImage((currentIndex - 1 + currentGallery.length) % currentGallery.length);
+      }
+
+      cards.forEach((card) => {
+        const img = card.querySelector('img');
+        const button = card.querySelector('.open-gallery');
+        if (img) img.addEventListener('click', () => openGallery(card));
+        if (button) button.addEventListener('click', (event) => {
+          event.stopPropagation();
+          openGallery(card);
+        });
+      });
+
+      btnClose.addEventListener('click', closeLightbox);
+      btnNext.addEventListener('click', nextImage);
+      btnPrev.addEventListener('click', prevImage);
+
+      btnZoomIn.addEventListener('click', () => {
+        scale = clamp(scale + 0.2, minScale, maxScale);
+        applyScale();
+      });
+
+      btnZoomOut.addEventListener('click', () => {
+        scale = clamp(scale - 0.2, minScale, maxScale);
+        applyScale();
+      });
+
+      btnZoomReset.addEventListener('click', () => {
+        scale = 1;
+        applyScale();
+      });
+
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+
+      lightbox.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        scale = clamp(scale + (event.deltaY < 0 ? 0.15 : -0.15), minScale, maxScale);
+        applyScale();
+      }, { passive: false });
+
+      lightboxImage.addEventListener('dblclick', () => {
+        scale = scale === 1 ? 2 : 1;
+        applyScale();
+      });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+
+      lightbox.addEventListener('touchstart', (event) => {
+        const touch = event.touches[0];
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      }, { passive: true });
+
+      lightbox.addEventListener('touchend', (event) => {
+        const touch = event.changedTouches[0];
+        const deltaX = touch.clientX - touchStartX;
+        const deltaY = touch.clientY - touchStartY;
+        if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+          if (deltaX < 0) nextImage();
+          else prevImage();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (lightbox.classList.contains('hidden')) return;
+        if (event.key === 'Escape') closeLightbox();
+        if (event.key === 'ArrowRight') nextImage();
+        if (event.key === 'ArrowLeft') prevImage();
+      });
+    })();
+  </script>
+</body>
+</html>
